@@ -84,6 +84,7 @@
 (require 'init-projectile)
 
 (require 'init-r)
+(require 'init-lua)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; init.el ends here
