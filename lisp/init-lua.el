@@ -3,7 +3,7 @@
 ;;; Code:
 
 (use-package lua-mode
-  :staight t
+  :straight t
   :mode "\\.lua\\'")
 
 
