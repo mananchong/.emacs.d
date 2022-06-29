@@ -67,5 +67,8 @@
 (require 'init-lisp)
 (require 'init-publish)
 (require 'init-projectile)
+
+(require 'init-r)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; init.el ends here
