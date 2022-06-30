@@ -50,6 +50,37 @@
 
 (update-load-path)
 
+;; set default font
+(cond
+ ((string-equal system-type "windows-nt") ; Microsoft Windows
+  (when (member "Rec Mono Casual" (font-family-list))
+    (set-frame-font "Rec Mono Casual" t t)))
+ ((string-equal system-type "darwin") ; macOS
+  (when (member "Menlo" (font-family-list))
+    (set-frame-font "Menlo" t t)))
+ ((string-equal system-type "gnu/linux") ; linux
+  (when (member "DejaVu Sans Mono" (font-family-list))
+    (set-frame-font "DejaVu Sans Mono" t t))))
+
+;; set font for chinese
+(set-fontset-font
+ t
+ 'han
+ (cond
+  ((string-equal system-type "windows-nt")
+   (cond
+    ((member "Microsoft YaHei" (font-family-list)) "Microsoft YaHei")
+    ((member "Microsoft JhengHei" (font-family-list)) "Microsoft JhengHei")
+    ((member "SimHei" (font-family-list)) "SimHei")))
+  ((string-equal system-type "darwin")
+   (cond
+    ((member "Hei" (font-family-list)) "Hei")
+    ((member "Heiti SC" (font-family-list)) "Heiti SC")
+    ((member "Heiti TC" (font-family-list)) "Heiti TC")))
+  ((string-equal system-type "gnu/linux")
+   (cond
+    ((member "WenQuanYi Micro Hei" (font-family-list)) "WenQuanYi Micro Hei")))))
+
 ;; Load `custom-file'
 ;; If it doesn't exist, copy from the template, then load it.
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
