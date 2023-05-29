@@ -1,10 +1,10 @@
-;;; manjis-r --- R config for manjis
+;;; manjis-ess --- R config for manjis
 ;;; commentary:
 
 ;;; Code:
 
 (use-package ess
-  :ensure t
+  ;; :ensure t
   ;; :bind (:map ess-mode-map
               ;; ("C-n" . ess-eval-line-and-step))
   :config
@@ -13,5 +13,5 @@
   (setq comint-move-point-for-output t)
   :mode ("\\.R\\'" . R-mode))
 
-(provide 'manjis-r)
-;;; manjis-r ends here
+(provide 'manjis-ess)
+;;; manjis-ess ends here

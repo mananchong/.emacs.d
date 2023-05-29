@@ -35,10 +35,13 @@ Heavily inspired by nykma/nema"
 (require 'manjis-font)
 
 ;; Language-specific layers
-(require 'manjis-r)
+(require 'manjis-ess)
 (require 'manjis-c)
 (require 'manjis-julia)
 (require 'manjis-org)
 (require 'manjis-completion)
 (require 'manjis-zig)
 (require 'manjis-vcs)
+
+;; Tools layers
+(require 'manjis-dict)
