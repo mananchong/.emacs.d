@@ -4,7 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(ace-jump-mode ace-window all-the-icons anzu beacon better-defaults ccls cmake-mode code-review company-posframe company-prescient delight diff-hl editorconfig ess hl-todo julia-mode magit-delta magit-gitflow multiple-cursors mwim puni quelpa-use-package rainbow-delimiters smart-mode-line solaire-mode volatile-highlights vscode-dark-plus-theme which-key youdao-dictionary zig-mode)))
+   '(zig-mode youdao-dictionary which-key vscode-dark-plus-theme volatile-highlights solaire-mode smart-mode-line rainbow-delimiters quelpa-use-package puni mwim multiple-cursors magit-gitflow magit-delta julia-mode hl-todo ess editorconfig diff-hl delight company-prescient company-posframe code-review cmake-mode ccls better-defaults beacon anzu all-the-icons ace-window ace-jump-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
