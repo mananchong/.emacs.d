@@ -48,6 +48,9 @@
 
 ;; (set-locale-environment "UTF-8")
 (set-language-environment "UTF-8")
+(set-default-coding-systems 'utf-8)
+(set-keyboard-coding-system 'utf-8-unix)
+(set-terminal-coding-system 'utf-8-unix)
 
 (setq require-final-newline nil
       visible-bell nil
