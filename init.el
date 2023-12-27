@@ -8,6 +8,12 @@ Heavily inspired by nykma/nema"
 ;; if something is wrong
 (setq debug-on-error t)
 
+;; proxy
+(setq url-proxy-services
+   '(("no_proxy" . "^\\(localhost\\|10.*\\)")
+     ("http" . "127.0.0.1:7890")
+     ("https" . "127.0.0.1:7890")))
+
 (require 'package)
 (package-initialize)
 
@@ -15,7 +21,7 @@ Heavily inspired by nykma/nema"
 (add-to-list 'load-path
              (expand-file-name "lisp" user-emacs-directory))
 
-(require 'manjis-customize-group)
+(require 'init-customize-group)
 
 ;; move customize-set-variable out of init.el
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
@@ -29,19 +35,19 @@ Heavily inspired by nykma/nema"
 ;; )
 
 ;; core layers
-(require 'manjis-core)
-(require 'manjis-basic)
-(require 'manjis-appearance)
-(require 'manjis-font)
+(require 'init-core)
+(require 'init-basic)
+(require 'init-appearance)
+(require 'init-font)
 
 ;; Language-specific layers
-(require 'manjis-ess)
-(require 'manjis-c)
-(require 'manjis-julia)
-(require 'manjis-org)
-(require 'manjis-completion)
-(require 'manjis-zig)
-(require 'manjis-vcs)
+(require 'init-ess)
+(require 'init-c)
+(require 'init-julia)
+(require 'init-org)
+(require 'init-completion)
+(require 'init-zig)
+(require 'init-vcs)
 
 ;; Tools layers
-(require 'manjis-dict)
+(require 'init-dict)

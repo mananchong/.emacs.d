@@ -1,4 +1,4 @@
-;;; manjis-core --- Core config for manjis
+;;; init-core --- Core config for manjis
 ;;; Commentary:
 
 ;;; Code:
@@ -23,12 +23,15 @@
 ;;     (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 ;;     (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 ;;     (add-to-list 'package-archives '("nongnu" . "https://elpa.nongnu.org/nongnu/") t)
-;;     ;; (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
-;;     ;; (add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
+;;     (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
+;;     (add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
 ;;     ))
-(setq package-archives '(("gnu"    . "https://mirrors.cernet.edu.cn/elpa/gnu/")
-                         ("nongnu" . "https://mirrors.cernet.edu.cn/elpa/nongnu/")
-                         ("melpa"  . "https://mirrors.cernet.edu.cn/elpa/melpa/")))
+
+(setq package-archives '(
+                         ("nongnu" . "https://elpa.nongnu.org/nongnu/")
+                         ("melpa"  . "https://melpa.org/packages/")
+                         ("org" . "https://orgmode.org/elpa/")
+))
 ;; (package-initialize)
 
 ;; use-package
@@ -111,5 +114,5 @@ e.g. ruby main.rb => ruby main.rb:directory_name"
       auto-save-list-file-prefix (expand-file-name ".cache/auto-save-list" user-emacs-directory)
       savehist-file (expand-file-name ".cache/history" user-emacs-directory))
 
-(provide 'manjis-core)
-;;; manjis-core.el ends here
+(provide 'init-core)
+;;; init-core.el ends here
