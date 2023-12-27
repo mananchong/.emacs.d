@@ -3,5 +3,5 @@ My current emacs configuration in main personal laptop.
 
 ** Installation
 #+BEGIN_SRC bash
-git clone --depth 1 https://github.com/guanyilun/.emacs.d ~/.emacs.d
+git clone --depth 1 https://github.com/mananchong/.emacs.d ~/.emacs.d
 #+END_SRC
