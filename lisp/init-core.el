@@ -27,7 +27,7 @@
 ;;     (add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
 ;;     ))
 
-(setq package-archives '(
+(setq package-archives '(("elpa" . "https://elpa.gnu.org/packages/")
                          ("nongnu" . "https://elpa.nongnu.org/nongnu/")
                          ("melpa"  . "https://melpa.org/packages/")
                          ("org" . "https://orgmode.org/elpa/")
